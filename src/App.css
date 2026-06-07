@@ -1,0 +1,17 @@
+body {
+  background-color: var(--color-neutral-dark);
+  color: var(--color-neutral-light);
+  padding-inline: 90px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-inline: 20px;
+  }
+}

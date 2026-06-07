@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap');
+@import 'tailwindcss';
+/* @import './assets//fonts/MarsBold.woff2'; */
+
+@font-face {
+    font-family: 'Mars';
+    src: url('./assets/fonts/MarsBold.woff2') format('woff2'),
+        url('./assets/fonts/MarsBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+  --color-neutral-dark: #0D1018;
+  --color-neutral-light: #F1F1F1;
+  --color-neutral-gray: #c0c0c0;
+  --color-primary: #5B9A8B;
+  --color-secondary: #F6E674;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-bebas-neue: 'Bebas Neue', cursive;
+  --font-dela-gothic-one: 'Dela Gothic One', cursive;
+  --font-bai-jamjuree: 'Bai Jamjuree', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-mars: 'Mars', sans-serif;
+
+  /* Font Sizes */
+  --text-title: 2.5rem;
+  --text-subtitle: 1.5rem;
+  --text-body: 1rem;
+  --text-label-large: 2rem;
+  --text-label-small: 0.875rem;
+}
