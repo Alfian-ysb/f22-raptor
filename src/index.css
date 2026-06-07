@@ -33,3 +33,7 @@
   --text-label-large: 2rem;
   --text-label-small: 0.875rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}

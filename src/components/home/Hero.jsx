@@ -78,7 +78,7 @@ const Hero = () => {
         </svg>
       </div>
       <div
-        className={`absolute -z-10 h-screen flex flex-col items-center justify-between py-32 `}
+        className={`absolute -z-10 h-screen flex flex-col items-center justify-center gap-14 lg:gap-0 lg:justify-between py-32`}
       >
         <div className={animatedClass}>
           <p className="bg-primary text-transparent bg-clip-text leading-none opacity-6 text-[10vw] font-bold font-mars">
@@ -102,13 +102,13 @@ const Hero = () => {
           alt="f22 raptor"
           className={`w-full aspect-auto object-contain transition-all duration-1400 ease-out ${
             isVisible
-              ? "opacity-100 scale-100 translate-y-0 translate-x-0"
+              ? "opacity-100 scale-130 lg:scale-100 translate-y-0 translate-x-0"
               : "opacity-0 scale-10 rotate-25 -translate-y-90 translate-x-20"
           }`}
         />
       </div>
       <div className={`absolute z-10 ${animatedClass2}`}>
-        <p className="text-transparent [-webkit-text-stroke:4px_#f1f1f1] leading-none text-[10vw] font-bold font-mars">
+        <p className="text-transparent [-webkit-text-stroke:2px_#f1f1f1] lg:[-webkit-text-stroke:4px_#f1f1f1] leading-none text-[10vw] font-bold font-mars">
           RAPTOR
         </p>
       </div>

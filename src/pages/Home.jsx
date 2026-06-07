@@ -6,6 +6,7 @@ import About from "../components/home/About";
 import Spec from "../components/home/Spec";
 import CoreFeatures from "../components/home/CoreFeatures";
 import Gallery from "../components/home/Gallery";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Spec />
       <CoreFeatures />
       <Gallery />
+      <Footer />
     </div>
   );
 };

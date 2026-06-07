@@ -3,17 +3,19 @@ import AboutImg from "../../assets/img/about.avif";
 
 const About = () => {
   return (
-    <div id="about" className="relative grid grid-cols-2 h-screen gap-16 py-20">
-      <div className="flex flex-col gap-12 my-auto">
-        <div className="flex flex-col font-dela-gothic-one">
+    <div id="about" className="relative grid grid-cols-1 lg:grid-cols-2 h-auto lg:h-screen gap-16 py-20 overflow-hidden -mt-20 scroll-mt-28">
+      
+      <div className="flex flex-col gap-12 my-auto order-2 lg:order-1">
+        <div className="flex flex-col font-dela-gothic-one text-center lg:text-left">
           <h3 className="text-primary opacity-40 text-title leading-none">
             F22
           </h3>
-          <h3 className="text-secondary text-[7.5rem] leading-none tracking-widest font-bold">
+          <h3 className="text-secondary text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] leading-none tracking-widest font-bold">
             RAPTOR
           </h3>
         </div>
-        <div className="flex flex-col gap-4 pl-12">
+        
+        <div className="flex flex-col gap-4 px-4 lg:px-0 lg:pl-12 text-center lg:text-left">
           <h1 className="text-primary text-subtitle font-medium font-orbitron">
             A Legendary Fighter Born of Fire
           </h1>
@@ -26,12 +28,14 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute w-[140%] h-auto inset-0 -translate-x-2/7 top-1/12">
-          <img src={AboutImg} alt="About F-22 Raptor" className="" />
+
+      <div className="relative order-1 lg:order-2 flex justify-center lg:block">
+        <div className="relative lg:absolute w-full max-w-[450px] lg:max-w-none lg:w-[140%] h-auto inset-0 lg:-translate-x-2/7 lg:top-1/12">
+          <img src={AboutImg} alt="About F-22 Raptor" className="w-full h-auto object-contain" />
         </div>
       </div>
-      <div className="absolute bottom-1/6 left-12 -translate-x-1/2 mb-8">
+
+      <div className="hidden lg:block absolute bottom-1/6 left-12 -translate-x-1/2 mb-8">
         <svg
           width="102"
           height="2"

@@ -20,17 +20,20 @@ const Spec = () => {
       },
     },
   ];
+
   return (
-    <div id="spec" className="relative h-screen">
+    <div id="specs" className="relative h-auto md:h-screen flex flex-col justify-center gap-8 md:gap-0 mt-40 scroll-mt-28">
       <div className="w-full">
         <h1 className="text-title font-orbitron font-medium tracking-wide text-center">
           Specifications
         </h1>
       </div>
-      <div className="grid grid-cols-4 w-full">
-        <div className="col-span-1 flex flex-col items-start justify-center gap-[10%]">
+
+      <div className="grid grid-cols-1 md:grid-cols-4 w-full items-center gap-8 md:gap-0">
+        
+        <div className="col-span-1 order-2 md:order-1 flex flex-col items-center md:items-start justify-center gap-[10%] text-center md:text-left px-4 md:px-0">
           {Specs[0].left.data.map((spec, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-12">
               <h2 className="text-primary text-title font-orbitron font-medium">
                 {spec.value}{" "}
                 <span className="text-neutral-gray text-sm">{spec.unit}</span>
@@ -39,16 +42,18 @@ const Spec = () => {
             </div>
           ))}
         </div>
-        <div className="col-span-2 py-8 px-16 box-border">
+
+        <div className="col-span-1 md:col-span-2 order-1 md:order-2 md:py-8 md:px-16 box-border md:max-h-full">
           <img
             src={SpecImg}
             alt="Specifications"
             className="w-full h-full object-contain aspect-auto"
           />
         </div>
-        <div className="col-span-1 flex flex-col items-start justify-center gap-[10%]">
+
+        <div className="col-span-1 order-3 flex flex-col items-center md:items-start justify-center gap-[10%] text-center md:text-left px-4 md:px-0">
           {Specs[0].right.data.map((spec, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-12">
               <h2 className="text-primary text-title font-orbitron font-medium">
                 {spec.value}{" "}
                 <span className="text-neutral-gray text-sm">{spec.unit}</span>
@@ -57,6 +62,7 @@ const Spec = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
