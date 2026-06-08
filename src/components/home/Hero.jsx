@@ -107,10 +107,14 @@ const Hero = () => {
           }`}
         />
       </div>
-      <div className={`absolute z-10 ${animatedClass2}`}>
-        <p className="text-transparent [-webkit-text-stroke:2px_#f1f1f1] lg:[-webkit-text-stroke:4px_#f1f1f1] leading-none text-[10vw] font-bold font-mars">
-          RAPTOR
-        </p>
+      <div className="absolute z-10 h-screen flex flex-col items-center justify-center gap-14 lg:gap-0 lg:justify-between py-32">
+        <div className="opacity-0 bg-red-400 text-[10vw] leading-none ">.</div>
+        <div className={` ${animatedClass2}`}>
+          <p className="text-transparent [-webkit-text-stroke:2px_#f1f1f1] lg:[-webkit-text-stroke:4px_#f1f1f1] leading-none text-[10vw] font-bold font-mars">
+            RAPTOR
+          </p>
+        </div>
+      <div className="opacity-0 bg-red-400 text-[10vw] leading-none ">.</div>
       </div>
     </div>
   );
