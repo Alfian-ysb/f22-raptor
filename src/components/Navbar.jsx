@@ -2,19 +2,14 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 const Navbar = () => {
-  // State untuk mengontrol buka/tutup hamburger menu di mobile
   const [isOpen, setIsOpen] = useState(false);
 
   const navItemsClasses =
     "text-start relative py-1 before:absolute before:w-full before:bottom-0 before:scale-x-0 before:transition-transform before:h-[3px] before:content-[''] before:origin-left before:left-0 before:duration-200 hover:before:scale-x-100 before:bg-primary w-full md:w-auto text-center md:text-left py-2 md:py-1";
 
   return (
-    // Menambahkan overflow-hidden saat menu ditutup di mobile agar transisi rapi
-    <div className="fixed top-0 left-0 w-full z-20 bg-[rgba(0,0,0,0.15)] backdrop-blur-md bg-opacity-50">
-      {/* Container Utama Navbar */}
-      {/* Padding bawaan px-22.5 diisolasi ke md:px-22.5. Di mobile menggunakan px-6 agar seimbang */}
+    <div className="fixed top-0 left-0 w-full z-20 bg-[rgba(0,0,0,0.46)] backdrop-blur-md bg-opacity-50">
       <div className="w-full flex items-center justify-between px-6 md:px-22.5 py-4">
-        {/* Logo Container */}
         <div>
           <button className="cursor-pointer drop-shadow-[0_0_35px_rgba(255,255,255,0.7)] rounded-sm p-1">
             <svg
@@ -36,7 +31,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Desktop Navigation Menu */}
+        {/* Desktop */}
         <nav className="hidden md:flex gap-4">
           <a className={navItemsClasses} href="#">
             Home
@@ -49,13 +44,11 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Desktop Button Kontak */}
         <div className="hidden md:block">
           <Button text="CONTACT" navigateTo="#footer" />
         </div>
 
-        {/* Mobile Hamburger Button */}
-        {/* Hanya muncul di layar kecil (md:hidden) */}
+        {/* Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="block md:hidden text-white focus:outline-none cursor-pointer z-30"
@@ -69,7 +62,6 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              // Icon 'X' saat menu terbuka
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -77,7 +69,6 @@ const Navbar = () => {
                 d="M6 18L18 6M6 6l12 12"
               />
             ) : (
-              // Icon 'Hamburger' saat menu tertutup
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

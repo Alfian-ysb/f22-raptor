@@ -21,7 +21,6 @@ const Footer = () => {
     
   return (
     <div id="footer" className="w-full h-auto py-16 grid grid-cols-1 md:grid-cols-5 gap-8 scroll-mt-28">
-      {/* Container Logo - Tengah di mobile, Kiri di desktop */}
       <div className="w-full max-w-[226px] h-auto col-span-1 mx-auto md:mx-0 flex justify-center md:justify-start">
         <svg
           width="80%"
@@ -42,7 +41,6 @@ const Footer = () => {
         </svg>
       </div>
 
-      {/* Container Links - Menumpuk vertikal di mobile, Sejajar horizontal di desktop */}
       <div className="w-full h-auto col-span-1 md:col-span-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between md:justify-end gap-8 md:gap-16">
           {Object.entries(footerLinks).map(([category, links]) => (
@@ -51,7 +49,7 @@ const Footer = () => {
               <ul className="flex flex-col gap-2">
                 {links.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="text-gray-600 hover:text-primary/90 transition-colors">
+                    <a href={link.href} className="text-gray-400 hover:text-primary/90 transition-colors">
                       {link.name}
                     </a>
                   </li>

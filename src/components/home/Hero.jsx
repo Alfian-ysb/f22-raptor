@@ -81,7 +81,7 @@ const Hero = () => {
         className={`absolute -z-10 h-screen flex flex-col items-center justify-center gap-14 lg:gap-0 lg:justify-between py-32`}
       >
         <div className={animatedClass}>
-          <p className="bg-primary text-transparent bg-clip-text leading-none opacity-6 text-[10vw] font-bold font-mars">
+          <p className="bg-primary text-transparent bg-clip-text leading-none opacity-10 text-[10vw] font-bold font-mars">
             RAPTOR
           </p>
         </div>
@@ -91,7 +91,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={animatedClassReverse}>
-          <p className="bg-primary text-transparent bg-clip-text leading-none opacity-6 text-[10vw] font-bold font-mars">
+          <p className="bg-primary text-transparent bg-clip-text leading-none opacity-10 text-[10vw] font-bold font-mars">
             RAPTOR
           </p>
         </div>

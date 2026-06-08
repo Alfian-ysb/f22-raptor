@@ -26,13 +26,11 @@ const KeyPoint = () => {
             />
           </svg>
         </div>
-        {/* Responsif teks: text-4xl di mobile, text-7xl di desktop */}
-        <p className="text-4xl sm:text-6xl lg:text-7xl font-bebas-neue leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
+        <p className="text-5xl sm:text-6xl lg:text-7xl font-bebas-neue leading-14 md:leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
           The first view
         </p>
       </div>
 
-      {/* Baris 2 */}
       <div className="flex items-center lg:flex-row justify-center lg:justify-start gap-4 w-full">
         <div className="w-full max-w-[351px] h-auto m-[0_auto] lg:m-0 hidden lg:block">
           <svg
@@ -51,12 +49,11 @@ const KeyPoint = () => {
             />
           </svg>
         </div>
-        <p className="text-4xl sm:text-6xl lg:text-7xl font-bebas-neue leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
-          The first kill
+        <p className="text-5xl sm:text-6xl lg:text-7xl font-bebas-neue leading-14 md:leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
+          The First Kill
         </p>
       </div>
 
-      {/* Baris 3 */}
       <div className="flex items-center lg:flex-row justify-center lg:justify-start gap-4 w-full">
         <div className="w-full max-w-[144px] h-auto m-[0_auto] lg:m-0 hidden lg:block">
           <svg
@@ -75,8 +72,8 @@ const KeyPoint = () => {
             />
           </svg>
         </div>
-        <p className="text-4xl sm:text-6xl lg:text-7xl font-bebas-neue leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
-          The first kill
+        <p className="text-5xl sm:text-6xl lg:text-7xl font-bebas-neue leading-14 md:leading-none text-center lg:text-left text-neutral-light whitespace-nowrap">
+          The First Shoot
         </p>
       </div>
     </div>
